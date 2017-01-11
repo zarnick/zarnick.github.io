@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>customizeYourVehicle</title>
+<link rel="stylesheet" type="text/css" href="../CSS/myCSS.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+<meta charset="UTF-8">
+</head>
+<body>
+<header> <img alt="company logo" src="../images/logo.png"></header>
+
+
+<nav>
+
+	<ul>
+		<li><a href="../index.html">Home</a></li>
+		<li>
+			Catagory
+			<ul>
+				<li><a href="../HTML/catagoryCar.html">Car</a></li>
+
+			</ul>
+		</li>
+		<li><a href="#">Customize Tour Vehicle</a></li>
+		<li><a href="aboutUs.html">About Us</a></li>
+		<li><a href="contactUs.html">Contact Us</a></li>
+	</ul>
+	
+</nav>
+
+<section style="width: 1000px;">
+
+    <img class="myAudi" alt="audi car red" id="audiRed" src="../images/Audi-R8-Coupe-red.png">
+	<img class="myAudi" alt="audi car black" id="audiBlack" src="../images/Audi-R8-Black.png" >
+	<img class="myAudi" alt="audi car silver" id="audiSilver" src="../images/Audi-R8-Silver.png" >
+	<img class="myAudi" alt="audi car yellow" id="audiYellow" src="../images/Audi-R8-Yellow.jpg" >
+	
+</section>
+
+
+<aside>
+
+	<button onclick="displayAudi()">Audi R8</button>
+	<button class="colour" id="redBtn" style="background-color: red;" onclick="redAudi()">Red</button>
+	<button class="colour" id="blackBtn" style="background-color: black;" onclick="blackAudi()">Black</button>
+	<button class="colour" id="silverBtn" style="background-color: silver;" onclick="silverAudi()">Silver</button>
+	<button class="colour" id="yellowBtn" style="background-color: yellow;" onclick="yellowAudi()">Yellow</button>
+</aside>
+
+<script type="text/javascript" src="../Javascript/colourChangeJS.js"></script>
+<script type="text/javascript" src="../Javascript/customiser.js"></script>
+</body>
+</html>

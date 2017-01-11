@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>contactUs</title>
+<link rel="stylesheet" type="text/css" href="../CSS/myCSS.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+<meta charset="UTF-8">
+</head>
+<body>
+<header> <img alt="company logo" src="../images/logo.png"></header>
+<nav>
+	<ul>
+		<li><a href="../index.html">Home</a></li>
+		<li>
+			Catagory
+			<ul>
+				<li><a href="../HTML/catagoryCar.html">Car</a></li>
+			</ul>
+		</li>
+		<li><a href="customizeYourVehicle.html">Customize Tour Vehicle</a></li>
+		<li><a href="aboutUs.html">About Us</a></li>
+		<li><a href="#">Contact Us</a></li>
+	</ul>
+</nav>
+
+<section>
+	<p>To send us feedback or ask us a question<br> please fill out the form below</P>
+	
+	<form name="myForm" action="myForm"  onsubmit="return validateForm()" method="post">
+		First name:<br>
+		<input type="text" name="firstname" value=""><br>
+		Last name:<br>
+		<input type="text" name="lastname" value=""><br>
+		E-mail:<br>
+		<input type="text" name="email" value=""><br>
+		Feedback/ Question:<br>
+		<textarea name="feedback" rows="5" cols="50"></textarea><br><br>
+		<input type="submit" value="Submit">
+		<input type="submit" value="Clear">
+	</form>
+	
+	<p id="contactDetails">
+		alternativly you can contact us through the following email address<br>E-mail: vehicles2go@aol.com<br> 
+		or contact us on our <a href="https://www.facebook.com/Vehicles-to-GO-1759802770935687/">facebook</a> page
+	</p>
+</section>
+<script type="text/javascript" src="../Javascript/colourChangeJS.js"></script>
+<script type="text/javascript" src="../Javascript/formValidation.js"></script>
+</body>
+</html>

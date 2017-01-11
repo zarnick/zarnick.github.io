@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>index</title>
+<link rel="stylesheet" type="text/css" href="CSS/myCSS.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+<meta charset="UTF-8">
+</head>
+<body>
+<header> <img alt="Company logo" src="images/logo.png"></header>
+<nav>
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li>
+			Catagory
+			<ul>
+				<li><a href="HTML/catagoryCar.html">Car</a></li>
+
+			</ul>
+		</li>
+		<li><a href="HTML/customizeYourVehicle.html">Customize Tour Vehicle</a></li>
+		<li><a href="HTML/aboutUs.html">About Us</a></li>
+		<li><a href="HTML/contactUs.html">Contact Us</a></li>
+		<li id="colourPicker">
+			Background color :
+			<br>
+		<input  id="selColour" type="color" value="#222222">
+		</li>
+	</ul>
+</nav>
+
+<section>
+<div class="imageCarousel" >
+<div>
+  <img class="mySlides" alt="Mercadez car" src="images/MercadezRed.png">
+  <img class="mySlides" alt="Car manafacturers logos" src="images/carLogos.jpg" >
+  <img class="mySlides" alt="Audi car on road" src="images/Audi-R8-on-Road1.jpg">
+</div>
+</div>
+</section>
+
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+<script type="text/javascript" src="Javascript/colourChangeJS.js"></script>
+</body>
+</html>
